@@ -25,6 +25,7 @@ function anchorHandler(e) {
     // e.preventDefault();
     e.target.href = "https://google.com"
     if (e.altKey && e.ctrlKey) e.target.href = "https://learn.javascript.ru/document";
+    e.stopPropagation();
     console.log(e);
 }
 function anchorHandler2(e) {
